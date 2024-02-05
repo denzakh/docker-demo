@@ -10,4 +10,4 @@ WORKDIR /opt/app
 ADD package.json ./
 RUN npm install --only=prod
 COPY from=build /opt/app/dist/apps/api ./dist
-CDM ["node", "./dist/main.js"]
+CMD ["node", "./dist/main.js"]
